@@ -4,6 +4,7 @@ import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Challenges from './pages/Challenges/Challenges';
+import Submissions from './pages/Submissions/Submissions';
 
 const ProtectedRoute = ({ children }) => {
   const { token } = useAuth();
@@ -23,6 +24,11 @@ function App() {
     <Route path="/challenges" element={
       <ProtectedRoute>
         <Challenges />
+      </ProtectedRoute>
+    } />
+    <Route path="/submissions" element={
+      <ProtectedRoute>
+        <Submissions />
       </ProtectedRoute>
     } />
     <Route path="/" element={<Navigate to="/login" />} />
