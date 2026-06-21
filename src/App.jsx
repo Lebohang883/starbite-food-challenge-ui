@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard/Dashboard';
 import Challenges from './pages/Challenges/Challenges';
 import Submissions from './pages/Submissions/Submissions';
 import Leaderboard from './pages/Leaderboard/Leaderboard';
+import Profile from './pages/Profile/Profile';
 
 const ProtectedRoute = ({ children }) => {
   const { token } = useAuth();
@@ -35,6 +36,11 @@ function App() {
     <Route path="/leaderboard" element={
       <ProtectedRoute>
         <Leaderboard />
+      </ProtectedRoute>
+    } />
+    <Route path="/profile" element={
+      <ProtectedRoute>
+        <Profile />
       </ProtectedRoute>
     } />
     <Route path="/" element={<Navigate to="/login" />} />

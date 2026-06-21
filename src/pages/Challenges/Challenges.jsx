@@ -67,6 +67,7 @@ const Challenges = () => {
         <h1>StarBite</h1>
         <div className="nav-links">
           <button onClick={() => navigate('/dashboard')}>Dashboard</button>
+           <button onClick={() => navigate('/submissions')}>Submissions</button>
           <button onClick={() => navigate('/leaderboard')}>Leaderboard</button>
           <button onClick={() => navigate('/profile')}>Profile</button>
         </div>

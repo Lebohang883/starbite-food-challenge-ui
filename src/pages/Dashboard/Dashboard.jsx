@@ -42,6 +42,7 @@ const Dashboard = () => {
         <h1>StarBite</h1>
         <div className="nav-links">
           <button onClick={() => navigate('/challenges')}>Challenges</button>
+          <button onClick={() => navigate('/submissions')}>Submissions</button>
           <button onClick={() => navigate('/leaderboard')}>Leaderboard</button>
           <button onClick={() => navigate('/profile')}>Profile</button>
           <button onClick={handleLogout} className="logout-btn">Logout</button>
