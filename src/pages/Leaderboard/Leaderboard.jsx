@@ -40,6 +40,7 @@ const Leaderboard = () => {
         <h1>StarBite</h1>
         <div className="nav-links">
           <button onClick={() => navigate('/dashboard')}>Dashboard</button>
+           <button onClick={() => navigate('/submissions')}>Submissions</button>
           <button onClick={() => navigate('/challenges')}>Challenges</button>
           <button onClick={() => navigate('/profile')}>Profile</button>
         </div>
