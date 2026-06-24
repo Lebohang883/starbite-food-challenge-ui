@@ -36,17 +36,21 @@ const Challenges = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setError(null);
-    try {
-      await createChallenge(formData);
-      setShowForm(false);
-      setFormData({ title: '', description: '', points: '', deadline: '' });
-      fetchChallenges();
-    } catch (err) {
-      setError(err.response?.data?.error || 'Failed to create challenge');
-    }
-  };
+  e.preventDefault();
+  console.log('Form submitted!', formData);
+  setError(null);
+  try {
+    const response = await createChallenge(formData);
+    console.log('FULL RESPONSE:', response.data);
+    console.log('MEAL SUGGESTION:', response.data.data.mealSuggestion);
+    setShowForm(false);
+    setFormData({ title: '', description: '', points: '', deadline: '' });
+    fetchChallenges();
+  } catch (err) {
+    console.log('Error caught:', err);
+    setError(err.response?.data?.error || 'Failed to create challenge');
+  }
+};
 
   const handleDelete = async (id) => {
     if (window.confirm('Are you sure you want to delete this challenge?')) {
@@ -64,7 +68,7 @@ const Challenges = () => {
   return (
     <div className="challenges-container">
       <nav className="navbar">
-        <h1>StarBite</h1>
+        <img src="/starbite-logo.png" alt="StarBite" className="auth-logo" />
         <div className="nav-links">
           <button onClick={() => navigate('/dashboard')}>Dashboard</button>
            <button onClick={() => navigate('/submissions')}>Submissions</button>

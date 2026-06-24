@@ -1,6 +1,6 @@
 .profile-container {
   min-height: 100vh;
-  background: #f5f5f5;
+  background: #FAF3E7;
 }
 
 .profile-content {
@@ -10,19 +10,20 @@
 }
 
 .profile-card {
-  background: white;
+  background: #FFF8EF;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(139, 94, 60, 0.1);
   text-align: center;
+  border: 1px solid #E8DCC8;
 }
 
 .profile-avatar {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: #C97B4B;
+  color: #FFF8EF;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,12 +33,12 @@
 }
 
 .profile-card h2 {
-  color: #333;
+  color: #4A3527;
   margin-bottom: 0.25rem;
 }
 
 .profile-role {
-  color: #888;
+  color: #8A7866;
   text-transform: capitalize;
   margin-bottom: 1.5rem;
 }
@@ -57,11 +58,11 @@
 .stat-value {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #667eea;
+  color: #C97B4B;
 }
 
 .stat-label {
-  color: #888;
+  color: #8A7866;
   font-size: 0.9rem;
 }
 
@@ -73,15 +74,15 @@
   display: flex;
   justify-content: space-between;
   padding: 0.75rem 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #E8DCC8;
 }
 
 .detail-label {
-  color: #888;
+  color: #8A7866;
 }
 
 .detail-value {
-  color: #333;
+  color: #4A3527;
   font-weight: 500;
 }
 
@@ -96,17 +97,19 @@
 .form-group label {
   display: block;
   margin-bottom: 0.5rem;
-  color: #555;
+  color: #8B5E3C;
   font-weight: 500;
 }
 
 .form-group input {
   width: 100%;
   padding: 0.75rem;
-  border: 1px solid #ddd;
+  border: 1px solid #E8DCC8;
   border-radius: 8px;
   font-size: 1rem;
   box-sizing: border-box;
+  background: #FAF3E7;
+  color: #4A3527;
 }
 
 .edit-actions {
@@ -118,39 +121,7 @@
 .btn-primary {
   flex: 1;
   padding: 0.75rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: #C97B4B;
+  color: #FFF8EF;
   border: none;
   border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  margin-top: 1rem;
-}
-
-.btn-secondary {
-  flex: 1;
-  padding: 0.75rem;
-  background: #ccc;
-  color: #333;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  margin-top: 1rem;
-}
-
-.success-message {
-  background: #d4edda;
-  color: #155724;
-  padding: 0.75rem;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-.error-message {
-  background: #fee;
-  color: #c00;
-  padding: 0.75rem;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}

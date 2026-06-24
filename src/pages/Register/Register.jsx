@@ -27,7 +27,7 @@ const Register = () => {
   return (
     <div className="auth-container">
       <div className="auth-card">
-        <h1>StarBite</h1>
+       <img src="/starbite-logo.png" alt="StarBite" className="auth-logo" />
         <h2>Register</h2>
         {error && <div className="error-message">{error}</div>}
         <form onSubmit={handleSubmit}>

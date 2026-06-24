@@ -63,7 +63,7 @@ const Submissions = () => {
   return (
     <div className="submissions-container">
       <nav className="navbar">
-        <h1>StarBite</h1>
+        <img src="/starbite-logo.png" alt="StarBite" className="auth-logo" />
         <div className="nav-links">
           <button onClick={() => navigate('/dashboard')}>Dashboard</button>
           <button onClick={() => navigate('/challenges')}>Challenges</button>
