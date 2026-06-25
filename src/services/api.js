@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'https://starbite-food-challenge-api.onrender.com',
+  baseURL: import.meta.env.VITE_API_URL,
 });
 
 //Automatically attach JWT token ro every request
